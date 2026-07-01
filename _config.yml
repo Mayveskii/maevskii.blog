@@ -7,7 +7,6 @@ description: >
   Writing about systems, security, decentralized AI and the future of compute.
 baseurl: "/maevskii.blog"
 url: "https://mayveskii.github.io"
-twitter_username: fullom3m3
 github_username: Mayveskii
 telegram_username: fullom3m3
 theme: minima
