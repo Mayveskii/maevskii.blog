@@ -1,0 +1,244 @@
+---
+---
+
+@import "minima";
+
+// Color palette from 00ai-singularity-superJumbo.jpg
+$bg-dark: #0a0a12;
+$bg-panel: rgba(20, 20, 35, 0.7);
+$cyan: #00f0ff;
+$magenta: #ff00aa;
+$violet: #8b5cf6;
+$gold: #fbbf24;
+$text: #e2e8f0;
+$text-muted: #94a3b8;
+$border: rgba(0, 240, 255, 0.25);
+
+body {
+  background-color: $bg-dark;
+  color: $text;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: $cyan;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+
+  &:hover {
+    color: $magenta;
+    text-shadow: 0 0 8px rgba(255, 0, 170, 0.6);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+  background: linear-gradient(90deg, #ffffff 0%, $cyan 50%, $magenta 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  border-bottom: 1px solid $border;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5em;
+  color: $cyan;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, $cyan, $magenta, transparent);
+  margin: 2.5em 0;
+}
+
+.site-header {
+  background: rgba(10, 10, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.site-title {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    color: $cyan !important;
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+  }
+}
+
+.site-nav .page-link {
+  color: $text !important;
+  font-weight: 500;
+
+  &:hover {
+    color: $cyan !important;
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  margin: -2rem -1rem 3rem;
+  background:
+    linear-gradient(135deg, rgba(10, 10, 18, 0.92) 0%, rgba(20, 15, 40, 0.85) 50%, rgba(10, 10, 18, 0.95) 100%),
+    url('{{ "/assets/images/hero.jpg" | relative_url }}') center/cover no-repeat;
+  border-bottom: 1px solid $border;
+  box-shadow: 0 0 60px rgba(139, 92, 246, 0.2);
+}
+
+.hero-content {
+  max-width: 900px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.3em;
+  text-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: $cyan;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: $text-muted;
+  max-width: 700px;
+  margin: 0 auto 2em;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid $cyan;
+    border-radius: 4px;
+    color: $cyan;
+    font-weight: 600;
+    background: rgba(0, 240, 255, 0.05);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(0, 240, 255, 0.15);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+      color: #ffffff;
+    }
+  }
+}
+
+.panel {
+  background: $bg-panel;
+  backdrop-filter: blur(10px);
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+li::marker {
+  color: $cyan;
+}
+
+strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.site-footer {
+  background: rgba(10, 10, 18, 0.9);
+  border-top: 1px solid $border;
+  color: $text-muted;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.wrapper {
+  max-width: 900px;
+}
+
+.page-content {
+  padding-top: 2rem;
+}
+
+.post-list > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.post-meta {
+  color: $text-muted;
+}
+
+pre, code {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: $cyan;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .panel {
+    padding: 1.2rem;
+  }
+}
