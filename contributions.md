@@ -4,8 +4,6 @@ title: Contributions
 permalink: /contributions/
 ---
 
-# Open-source Contributions
-
 I focus on protocol reliability, consensus safety, error propagation and AI infrastructure. Below is the full list of my public contributions.
 
 ---
