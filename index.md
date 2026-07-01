@@ -3,26 +3,31 @@ layout: home
 title: Home
 ---
 
-# Artemii Maevskii
+<div class="hero">
+  <div class="hero-content">
+    <h1>Artemii Maevskii</h1>
+    <div class="hero-subtitle">Senior DevOps / SRE / AI Infrastructure Engineer</div>
+    <div class="hero-tagline">
+      I design, build and secure infrastructure that stays alive under pressure — from on-prem data centers and NDA-critical systems to decentralized AI protocols and open-source security.
+    </div>
+    <div class="hero-links">
+      <a href="{{ site.baseurl }}/about/">About me</a>
+      <a href="{{ site.baseurl }}/organizations/">Organizations</a>
+      <a href="https://github.com/Mayveskii">GitHub</a>
+      <a href="https://t.me/fullom3m3">Telegram</a>
+    </div>
+  </div>
+</div>
 
-**Senior DevOps / SRE / AI Infrastructure Engineer**
-
-I design, build and secure infrastructure that stays alive under pressure. My background spans on-prem/hybrid data centers, corporate security, network engineering and AI/ML systems. I believe reliability is a feature, and the best ops work is the one that prevents problems before they become incidents.
-
-Over the last 6.5+ years I have moved from Linux/Windows system administration to owning entire production platforms: Proxmox clusters, CI/CD pipelines, monitoring at 500+ hosts, Active Directory from scratch, internal products and NDA-critical infrastructure.
-
-Today I focus on three things: keeping platforms reliable, making AI infrastructure production-ready, and contributing security fixes back to core protocols.
-
----
-
-## What I do
-
-- **Platform & SRE:** Proxmox VE, Ansible, GitLab CI/CD, Zabbix/Grafana, Windows/Linux fleets, backup & recovery, datacenter operations.
-- **AI infrastructure:** RAG pipelines, LLM inference, MCP agents, semantic caches, decentralized AI protocols.
-- **Open-source security:** protocol-level fixes in ethereum/go-ethereum, gonka-ai/gonka and gonkalabs/opengnk.
-- **Internal products:** full-cycle development and deployment of HR systems, security apps, OCR pipelines and automation bots.
-
----
+<div class="panel">
+  <h2>What I do</h2>
+  <ul>
+    <li><strong>Platform & SRE:</strong> Proxmox VE, Ansible, GitLab CI/CD, Zabbix/Grafana, Windows/Linux fleets, backup & recovery, datacenter operations.</li>
+    <li><strong>AI infrastructure:</strong> RAG pipelines, LLM inference, MCP agents, semantic caches, decentralized AI protocols.</li>
+    <li><strong>Open-source security:</strong> protocol-level fixes in ethereum/go-ethereum, gonka-ai/gonka and gonkalabs/opengnk.</li>
+    <li><strong>Internal products:</strong> full-cycle development and deployment of HR systems, security apps, OCR pipelines and automation bots.</li>
+  </ul>
+</div>
 
 ## Selected achievements
 
@@ -35,8 +40,6 @@ Today I focus on three things: keeping platforms reliable, making AI infrastruct
 - **Secure messenger** with E2E encryption and TURN server for VoIP/video.
 - Protocol and consensus fixes merged into **ethereum/go-ethereum** and **gonka-ai/gonka**.
 
----
-
 ## Where I am heading
 
 I am building two organizations:
@@ -45,8 +48,6 @@ I am building two organizations:
 - **[mv-ml](https://github.com/mv-ml)** — applied machine learning: document AI, OCR, computer vision, RAG, agents and production ML tooling.
 
 Both are open by default. The goal is to make AI infrastructure more reliable, decentralized and useful in real systems.
-
----
 
 ## Open-source highlights
 
@@ -58,9 +59,4 @@ Both are open by default. The goal is to make AI infrastructure more reliable, d
 
 ---
 
-## Get in touch
-
-- Telegram: [@fullom3m3](https://t.me/fullom3m3)
-- GitHub: [Mayveskii](https://github.com/Mayveskii)
-
-[About me]({{ site.baseurl }}/about/) · [Organizations]({{ site.baseurl }}/organizations/)
+Get in touch: [Telegram](https://t.me/fullom3m3) · [GitHub](https://github.com/Mayveskii)
