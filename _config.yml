@@ -1,2 +1,17 @@
+title: Artemii Maevskii
+author:
+  name: Artemii Maevskii
+  email: ""
+description: >
+  Infrastructure engineer · DevOps/SRE · AI infrastructure · Open-source protocol contributor.
+  Writing about systems, security, decentralized AI and the future of compute.
+baseurl: "/maevskii.blog"
+url: "https://mayveskii.github.io"
+twitter_username: fullom3m3
+github_username: Mayveskii
+telegram_username: fullom3m3
 theme: minima
-description: do not blame newbie , remind that is still you're 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+show_excerpts: true
