@@ -11,7 +11,6 @@ title: Home
       I design, build and secure infrastructure that stays alive under pressure — from on-prem data centers and NDA-critical systems to decentralized AI protocols and open-source security.
     </div>
     <div class="hero-links">
-      <a href="{{ site.baseurl }}/about/">Artemii Maevskii</a>
       <a href="{{ site.baseurl }}/organizations/">Organizations</a>
       <a href="{{ site.baseurl }}/contributions/">Contributions</a>
       <a href="https://github.com/Mayveskii">GitHub</a>
