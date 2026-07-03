@@ -109,9 +109,8 @@ I contribute security and reliability fixes to core protocols and AI infrastruct
 
 ## Organizations
 
-- **[mv-core](https://github.com/mv-core)** — decentralized AI compute and protocol infrastructure. Consensus, inference optimization, semantic caching, networking and systems programming.
-- **[mv-ml](https://github.com/mv-ml)** — applied machine learning: document AI, OCR, computer vision, RAG, agents and production ML tooling.
-
+- [mv-core](https://github.com/mv-core)
+- [mv-ml](https://github.com/mv-ml)
 ## Education
 
 - Vocational education — Economics and accounting
