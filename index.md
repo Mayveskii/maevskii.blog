@@ -12,7 +12,6 @@ title: Home
     </div>
     <div class="hero-links">
       <a href="{{ site.baseurl }}/organizations/">Organizations</a>
-      <a href="{{ site.baseurl }}/contributions/">Contributions</a>
       <a href="https://github.com/Mayveskii">GitHub</a>
       <a href="https://t.me/fullom3m3">Telegram</a>
     </div>
@@ -101,78 +100,13 @@ title: Home
 - Maintained owner infrastructure.
 - Supported Zabbix monitoring and Docker containers.
 
-## Open-source Contributions
+## Open-source Work
 
-### ethereum / go-ethereum — protocol-level security fixes
+I contribute security and reliability fixes to core protocols and AI infrastructure. Highlights include merged fixes in **ethereum/go-ethereum** (mutex leaks, blobpool data loss, filtermaps error handling), consensus and inference hardening in **gonka-ai/gonka** (BLS/DKG, semantic cache, error propagation), and L1 semantic cache work in **gonkalabs/opengnk**.
 
-- [PR #34039](https://github.com/ethereum/go-ethereum/pull/34039) (merged) — core: fix txLookupLock mutex leak on error returns in reorg()
-- [PR #34737](https://github.com/ethereum/go-ethereum/pull/34737) — core/overlay: prevent silent transition state restart on decode failure
-- [PR #34665](https://github.com/ethereum/go-ethereum/pull/34665) — core/txpool/blobpool: prevent data loss in limbo.update on setAndIndex failure
-- [PR #34099](https://github.com/ethereum/go-ethereum/pull/34099) — core/filtermaps: return 0 on error in tailPartialBlocks
-- [PR #34098](https://github.com/ethereum/go-ethereum/pull/34098) — core/state/snapshot: handle bloom filter errors in diffLayer.rebloom
-- [PR #34097](https://github.com/ethereum/go-ethereum/pull/34097) — core/state: log Reader error in commitAndFlush instead of discarding
-- [PR #34096](https://github.com/ethereum/go-ethereum/pull/34096) — eth/protocols/snap: handle StateReader error in ServiceTrieNodesQuery
-- [PR #34095](https://github.com/ethereum/go-ethereum/pull/34095) — core/filtermaps: replace panics with error returns in matcher
-- [Issue #34944](https://github.com/ethereum/go-ethereum/issues/34944) — core/txpool/blobpool: data loss in limbo.update on setAndIndex failure
-- [Issue #34038](https://github.com/ethereum/go-ethereum/issues/34038) — core: txLookupLock mutex leaked on error returns in reorg()
+My own projects include **Mayveskii/Mimic** (MCP server with C-core execution engine), **Mayveskii/docpool** (RAG document workflow) and **Mayveskii/danila.local** (Active Directory automation).
 
-### gonka-ai / gonka — decentralized AI infrastructure
-
-**Merged / closed:**
-- [PR #1071](https://github.com/gonka-ai/gonka/pull/1071) (merged) — hardening: propagate internal errors across inference/validation/pricing paths
-- [PR #1076](https://github.com/gonka-ai/gonka/pull/1076) — fix: propagate storage errors in UpdateDynamicPricing
-- [PR #1075](https://github.com/gonka-ai/gonka/pull/1075) — fix: return errors from OverlapsWithPoC instead of swallowing them
-- [PR #1074](https://github.com/gonka-ai/gonka/pull/1074) — fix: propagate storage errors in SubmitPocValidationsV2
-- [PR #1073](https://github.com/gonka-ai/gonka/pull/1073) — fix: propagate errors in handleInferenceCompleted
-- [PR #1072](https://github.com/gonka-ai/gonka/pull/1072) — fix: reject zero completion tokens in FinishInference
-- [PR #1012](https://github.com/gonka-ai/gonka/pull/1012) — fix(keeper): propagate SetPocValidationV2 storage error in SubmitPocValidationsV2
-- [PR #970](https://github.com/gonka-ai/gonka/pull/970) — fix(keeper): use regexp instead of fmt.Sscanf to parse ErrInsufficientFunds in ClaimRewards
-- [PR #968](https://github.com/gonka-ai/gonka/pull/968) — fix(keeper): propagate InjectParamsIntoContext error in Validation handler
-- [PR #961](https://github.com/gonka-ai/gonka/pull/961) — test: add reservoir sampling fairness property test
-- [PR #960](https://github.com/gonka-ai/gonka/pull/960) — fix: add max-size guard to bandwidth limiter usage maps
-- [PR #959](https://github.com/gonka-ai/gonka/pull/959) — fix: unify epoch cache to single invalidation path
-- [PR #958](https://github.com/gonka-ai/gonka/pull/958) — fix: add per-epoch validation submission rate limit
-- [PR #957](https://github.com/gonka-ai/gonka/pull/957) — fix: add graceful shutdown with signal handling in decentralized-api
-- [PR #956](https://github.com/gonka-ai/gonka/pull/956) — fix: return error when InjectParamsIntoContext fails in Validation
-- [PR #909](https://github.com/gonka-ai/gonka/pull/909) — bls: propagate caller context to BlsManager and add per-call timeouts
-- [PR #878](https://github.com/gonka-ai/gonka/pull/878) — feat(binary-singularity): semantic cache extending #859 #860
-- [PR #859](https://github.com/gonka-ai/gonka/pull/859) — feat(semantic-cache): L2 quality gate pipeline — adaptive coherence floor + hub loop closure
-- [PR #852](https://github.com/gonka-ai/gonka/pull/852) — fix(bls): use slot-weighted votes in DKG dealer consensus
-- [PR #851](https://github.com/gonka-ai/gonka/pull/851) — fix(bls): remove self-validation fallback in group key validation
-- [Issue #1067](https://github.com/gonka-ai/gonka/issues/1067) — bug: ClaimRewards error handling — payout path silently continues on failure
-- [Issue #848](https://github.com/gonka-ai/gonka/issues/848) — Security: BLS group key validation falls back to self-validation
-- [Issue #849](https://github.com/gonka-ai/gonka/issues/849) — Bug: DKG permanent failure — dealer consensus uses unweighted participant votes but quorum uses slot weights
-
-**Open:**
-- [PR #1098](https://github.com/gonka-ai/gonka/pull/1098) — devshards Postgres support for devshard storage
-- [PR #1017](https://github.com/gonka-ai/gonka/pull/1017) — fix(keeper): add overflow guards in bitcoin supply-cap distribution loop
-- [PR #1013](https://github.com/gonka-ai/gonka/pull/1013) — fix(subnet): prevent fund loss in unsettled escrow distribution
-- [PR #969](https://github.com/gonka-ai/gonka/pull/969) — fix(dapi): use signal.NotifyContext for graceful shutdown
-- [PR #910](https://github.com/gonka-ai/gonka/pull/910) — bls: add epoch-level idempotency guard to ProcessKeyGenerationInitiated
-- [PR #854](https://github.com/gonka-ai/gonka/pull/854) — fix(payloadstorage): advance minPruned only after successful prune
-- [Issue #908](https://github.com/gonka-ai/gonka/issues/908) — bls: BlsManager stores context.Background() — DKG gRPC calls have no cancellation or timeout
-
-### gonkalabs / opengnk — inference quality & semantic cache
-
-- [PR #2](https://github.com/gonkalabs/opengnk/pull/2) (merged) — L1 semcache: handler X-Cache, toolsim, internal/semcache
-- [PR #1](https://github.com/gonkalabs/opengnk/pull/1) (merged) — feat(quality): add inference quality metrics middleware
-
-### Mayveskii / Mimic — MCP execution engine
-
-- [PR #4](https://github.com/Mayveskii/Mimic/pull/4) (merged) — chore: bump Go to 1.26 for security and future compatibility
-- [PR #3](https://github.com/Mayveskii/Mimic/pull/3) (merged) — ci: refactor workflows, archive old specs, add releasing docs
-
-### Mayveskii / docpool — RAG document workflow
-
-*Go / PostgreSQL / pgvector · [github.com/Mayveskii/docpool](https://github.com/Mayveskii/docpool)*
-
-Document workflow system with RAG architecture: integration with GonkaGate API, vector search, AI document processing.
-
-### Mayveskii / danila.local — Active Directory automation
-
-*PowerShell · [github.com/Mayveskii/danila.local](https://github.com/Mayveskii/danila.local)*
-
-Automation of Windows Server / AD / GPO domain infrastructure.
+Full list with links is available on [GitHub](https://github.com/Mayveskii).
 
 ## Organizations
 
