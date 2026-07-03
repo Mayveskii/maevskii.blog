@@ -11,6 +11,7 @@ telegram_username: fullom3m3
 theme: minima
 header_pages:
   - organizations.md
+  - contributions.md
 plugins:
   - jekyll-feed
   - jekyll-sitemap
