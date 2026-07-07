@@ -46,8 +46,6 @@ I am an infrastructure engineer with **6.5+ years of production experience** acr
 - **RAG document workflow for fintech/back-office** — PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
 - **Active Directory / GPO** — Domain infrastructure automation, DNS, replication, Group Policy for enterprise and financial environments.
 
-Public GitHub is new (2025) because my previous work was under strict NDA.
-
 ## Contacts
 
 - Telegram: [@fullom3m3](https://t.me/fullom3m3)
