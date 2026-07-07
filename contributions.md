@@ -87,7 +87,6 @@ RAG document workflow for fintech/back-office: PostgreSQL/pgvector, GonkaGate AP
 
 ---
 
-## Mayveskii / danila.local
+## Active Directory / GPO infrastructure
 
-Active Directory domain automation and Windows Server/GPO infrastructure.
-[github.com/Mayveskii/danila.local](https://github.com/Mayveskii/danila.local)
+Domain automation, Group Policy, DNS and replication for Windows Server environments.
