@@ -108,8 +108,8 @@ I build and harden infrastructure for AI and fintech products:
 - **gonka-ai/gonka** — consensus safety, inference validation, semantic cache, error propagation in a decentralized AI compute protocol.
 - **gonkalabs/opengnk** — L1 semantic cache and inference quality metrics.
 - **Mayveskii/Mimic** — MCP server with C-core execution engine, orchestrator and multi-tool agent framework.
-- **Mayveskii/docpool** — RAG document workflow for fintech/back-office: PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
-- **Mayveskii/danila.local** — Active Directory domain automation and Windows Server/GPO infrastructure.
+- **RAG document workflow for fintech/back-office** — PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
+- **Active Directory / GPO** — Domain infrastructure automation, DNS, replication, Group Policy for enterprise and financial environments.
 
 [See full contribution list →]({{ site.baseurl }}/contributions/)
 ## Organizations
