@@ -75,19 +75,19 @@ I focus on protocol reliability, consensus safety, error propagation and AI infr
 
 ## Mayveskii / Mimic
 
-- [PR #4](https://github.com/Mayveskii/Mimic/pull/4) (merged) — chore: bump Go to 1.26 for security and future compatibility
-- [PR #3](https://github.com/Mayveskii/Mimic/pull/3) (merged) — ci: refactor workflows, archive old specs, add releasing docs
+MCP server with C-core execution engine, orchestrator and multi-tool agent framework.
+[github.com/Mayveskii/Mimic](https://github.com/Mayveskii/Mimic)
 
 ---
 
 ## Mayveskii / docpool
 
-RAG document workflow with PostgreSQL/pgvector and GonkaGate API.
+RAG document workflow for fintech/back-office: PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
 [github.com/Mayveskii/docpool](https://github.com/Mayveskii/docpool)
 
 ---
 
 ## Mayveskii / danila.local
 
-Active Directory domain infrastructure automation.
+Active Directory domain automation and Windows Server/GPO infrastructure.
 [github.com/Mayveskii/danila.local](https://github.com/Mayveskii/danila.local)
