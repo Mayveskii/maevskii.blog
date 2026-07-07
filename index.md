@@ -23,8 +23,7 @@ title: Home
   <h2>Summary</h2>
   <p>I progressed from Linux/Windows system administrator to DevOps/Senior Sysadmin responsible for 500+ hosts, NDA-critical infrastructure, and internal HR/InfoSec products.</p>
   <p>I am an active open-source contributor to L1/L2 protocols and AI infrastructure: security fixes, error propagation, consensus bugs, semantic cache, LLM inference hardening in <strong>ethereum/go-ethereum</strong>, <strong>gonka-ai/gonka</strong> and <strong>gonkalabs/opengnk</strong>. In recent years I have been building my own AI/ML projects: RAG, MCP servers, decentralized AI.</p>
-  <p>Public GitHub is a new account (2025) because previous work was under strict NDA.</p>
-</div>
+  </div>
 
 ## Key Skills
 
@@ -103,10 +102,16 @@ title: Home
 
 ## Open-source Work
 
-I contribute security and reliability fixes to core protocols and AI infrastructure. Highlights include merged fixes in **ethereum/go-ethereum**, consensus and inference hardening in **gonka-ai/gonka**, and L1 semantic cache work in **gonkalabs/opengnk**. My own projects include **Mayveskii/Mimic**, **Mayveskii/docpool** and **Mayveskii/danila.local**.
+I build and harden infrastructure for AI and fintech products:
+
+- **ethereum/go-ethereum** — protocol-level security fixes: mutex leaks, blobpool data loss, filtermaps error handling.
+- **gonka-ai/gonka** — consensus safety, inference validation, semantic cache, error propagation in a decentralized AI compute protocol.
+- **gonkalabs/opengnk** — L1 semantic cache and inference quality metrics.
+- **Mayveskii/Mimic** — MCP server with C-core execution engine, orchestrator and multi-tool agent framework.
+- **Mayveskii/docpool** — RAG document workflow for fintech/back-office: PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
+- **Mayveskii/danila.local** — Active Directory domain automation and Windows Server/GPO infrastructure.
 
 [See full contribution list →]({{ site.baseurl }}/contributions/)
-
 ## Organizations
 
 - [mv-core](https://github.com/mv-core)
