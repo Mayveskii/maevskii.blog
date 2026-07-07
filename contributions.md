@@ -80,10 +80,9 @@ MCP server with C-core execution engine, orchestrator and multi-tool agent frame
 
 ---
 
-## Mayveskii / docpool
+## RAG document workflow for fintech/back-office
 
-RAG document workflow for fintech/back-office: PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
-[github.com/Mayveskii/docpool](https://github.com/Mayveskii/docpool)
+PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
 
 ---
 
