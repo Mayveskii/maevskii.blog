@@ -43,8 +43,8 @@ I am an infrastructure engineer with **6.5+ years of production experience** acr
 - **gonka-ai/gonka** — BLS/DKG consensus fixes, error propagation, semantic cache, inference validation.
 - **gonkalabs/opengnk** — L1 semantic cache, inference quality metrics.
 - **Mayveskii/Mimic** — MCP server with C-core execution engine.
-- **Mayveskii/docpool** — RAG document workflow.
-- **Mayveskii/danila.local** — Active Directory automation.
+- **RAG document workflow for fintech/back-office** — PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
+- **Active Directory / GPO** — Domain infrastructure automation, DNS, replication, Group Policy for enterprise and financial environments.
 
 Public GitHub is new (2025) because my previous work was under strict NDA.
 
