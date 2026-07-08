@@ -1,131 +1,126 @@
 ---
-layout: home
+layout: landing
 title: Home
 ---
 
-<div class="hero">
+<section id="hero" class="hero">
   <div class="hero-content">
+    <img class="hero-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Artemii Maevskii">
     <h1>Artemii Maevskii</h1>
     <div class="hero-subtitle">Senior DevOps / SRE / AI Infrastructure Engineer</div>
     <div class="hero-tagline">
-      Infrastructure engineer with 6.5+ years of production experience in automation, enterprise security, networking, virtualization and AI infrastructure.
+      6.5+ years of production experience in automation, enterprise security, networking, virtualization and AI infrastructure.
     </div>
     <div class="hero-links">
-      <a href="{{ site.baseurl }}/organizations/">Organizations</a>
-      <a href="{{ site.baseurl }}/contributions/">Contributions</a>
-      <a href="https://github.com/Mayveskii">GitHub</a>
-      <a href="https://t.me/fullom3m3">Telegram</a>
+      <a href="#about">About me</a>
+      <a href="#experience">Experience</a>
+      <a href="https://github.com/Mayveskii" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://t.me/fullom3m3" target="_blank" rel="noopener">Telegram</a>
     </div>
   </div>
-</div>
+</section>
 
-<div class="panel">
-  <h2>Summary</h2>
-  <p>I progressed from Linux/Windows system administrator to DevOps/Senior Sysadmin responsible for 500+ hosts, NDA-critical infrastructure, and internal HR/InfoSec products.</p>
-  <p>I am an active open-source contributor to L1/L2 protocols and AI infrastructure: security fixes, error propagation, consensus bugs, semantic cache, LLM inference hardening in <strong>ethereum/go-ethereum</strong>, <strong>gonka-ai/gonka</strong> and <strong>gonkalabs/opengnk</strong>. In recent years I have been building my own AI/ML projects: RAG, MCP servers, decentralized AI.</p>
+<section id="about" class="section">
+  <div class="wrapper">
+    <h2 class="section-title">About</h2>
+    <div class="panel">
+      <p>I progressed from Linux/Windows system administrator to DevOps/Senior Sysadmin, owning infrastructure and deployment for 500+ hosts, NDA-critical environments, and internal HR/InfoSec products.</p>
+      <p>Today I focus on AI infrastructure, protocol-level reliability and open-source: security fixes, consensus bugs, semantic cache and error propagation in <strong>ethereum/go-ethereum</strong>, <strong>gonka-ai/gonka</strong> and <strong>gonkalabs/opengnk</strong>.</p>
+      <p class="about-more"><a href="{{ '/about/' | relative_url }}">Read full bio →</a></p>
+    </div>
   </div>
+</section>
 
-## Key Skills
+<section id="skills" class="section">
+  <div class="wrapper">
+    <h2 class="section-title">Key Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Infrastructure & Virtualization</h3>
+        <p>Proxmox VE, bare-metal, datacenter management, Hetzner/VPS/VDS, Windows Server, Active Directory, GPO, PowerShell</p>
+      </div>
+      <div class="skill-card">
+        <h3>Automation & CI/CD</h3>
+        <p>Ansible, GitLab CI/CD, GitHub Actions, Bash, Python, Git, Infrastructure as Code</p>
+      </div>
+      <div class="skill-card">
+        <h3>Monitoring & Observability</h3>
+        <p>Zabbix at scale, Grafana dashboards, Proxmox API integrations, custom metrics</p>
+      </div>
+      <div class="skill-card">
+        <h3>Containers</h3>
+        <p>Docker, Docker Compose, Docker Registry; Kubernetes — ready for production</p>
+      </div>
+      <div class="skill-card">
+        <h3>Networking & Security</h3>
+        <p>MikroTik, Wireguard, OpenVPN, IPSec, DNS, NAT, firewall, OWASP, traffic analysis</p>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>PostgreSQL, MariaDB, MySQL, Redis, SQLAlchemy, Alembic</p>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud & CDN</h3>
+        <p>Cloud providers, CDN, VPS/VDS, 24/7 availability design</p>
+      </div>
+      <div class="skill-card">
+        <h3>AI / ML Infrastructure</h3>
+        <p>Python, Go, RAG, LLM inference, MCP/agents, OpenCV, TensorFlow, Tesseract OCR</p>
+      </div>
+      <div class="skill-card">
+        <h3>Development & Web</h3>
+        <p>PHP/Laravel, JavaScript, Node.js, React, Vue.js, Java, Kotlin, REST API, Nginx</p>
+      </div>
+      <div class="skill-card">
+        <h3>Enterprise Comms</h3>
+        <p>Asterisk, Matrix Synapse, TURN server, Bitrix Portal, Telegram Bot API</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="panel">
-  <p><strong>Infrastructure & Virtualization:</strong> Proxmox VE (clusters, API, backups), bare-metal, datacenter management, Hetzner/VPS/VDS, Windows Server (2016/2019/2022/2025), Active Directory, GPO, PowerShell</p>
-  <p><strong>Automation & CI/CD:</strong> Ansible (playbooks, roles, vault), GitLab CI/CD, GitHub Actions, Bash, Python, Git, Infrastructure as Code</p>
-  <p><strong>Monitoring & Observability:</strong> Zabbix (500+ hosts, custom metrics), Grafana dashboards, Proxmox API integrations, custom metrics</p>
-  <p><strong>Containers:</strong> Docker, Docker Compose, Docker Registry; Kubernetes — familiar with the tool and ready for production use (no large-scale cluster experience yet)</p>
-  <p><strong>Cloud & CDN:</strong> Cloud providers (instance deployment, 24/7 availability), CDN, VPS/VDS</p>
-  <p><strong>Networking & Security:</strong> MikroTik (routing, VPN, firewall), Wireguard/OpenVPN/IPSec, DNS, NAT, proxy, firewall, OWASP, traffic analysis, OSI model</p>
-  <p><strong>Databases:</strong> PostgreSQL (administration, replication, backup), MariaDB, MySQL, Redis, SQL, SQLAlchemy, Alembic</p>
-  <p><strong>AI / ML Infrastructure:</strong> Python, Go, RAG (pgvector), LLM inference (vLLM), MCP/agents, OpenCV, TensorFlow, Tesseract OCR</p>
-  <p><strong>Development & Web:</strong> PHP/Laravel, JavaScript, Node.js, React, Vue.js, Java, Kotlin, REST API, Nginx, Apache</p>
-  <p><strong>Communications & Enterprise:</strong> Asterisk, Matrix Synapse, TURN server, Bitrix Portal, PERCo-WEB, Telegram Bot API, satellite communications</p>
-</div>
+<section id="experience" class="section">
+  <div class="wrapper">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <h3>TemplateState — DevOps / Senior Sysadmin</h3>
+          <div class="timeline-meta">April 2023 – Present · Remote</div>
+          <p>Proxmox clusters, Ansible + GitLab CI/CD, Zabbix/Grafana at scale, Active Directory from scratch, internal HR system, Bitrix and mail infrastructure.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <h3>TezTour [NDA] — Senior Sysadmin, InfoSec Dept.</h3>
+          <div class="timeline-meta">January 2020 – February 2023 · Office / remote</div>
+          <p>Critical infrastructure for a large international tour operator. Network security, MikroTik, VPNs, custom monitoring, secure messenger, Android security app, OCR and HR bots.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <h3>TezTour Thailand — System Administrator</h3>
+          <div class="timeline-meta">May 2018 – December 2019 · Office</div>
+          <p>Linux/Windows servers, PostgreSQL/MariaDB, Bash/Python automation, Zabbix, Docker.</p>
+        </div>
+      </div>
+    </div>
+    <p class="experience-more"><a href="{{ '/contributions/' | relative_url }}">See open-source contributions →</a></p>
+  </div>
+</section>
 
-## Experience
-
-### TemplateState — DevOps Engineer / Senior System Administrator
-*April 2023 – Present · Remote*
-
-**Stack:** Proxmox VE, Ansible, GitLab CI/CD, Zabbix, Grafana, Python, Docker, PostgreSQL, Linux, Windows Server, Active Directory, Bitrix, mail services
-
-- Grew into a DevOps/Senior Sysadmin role, fully owning infrastructure and deployment of corporate services.
-- Administer Proxmox VE virtualization clusters: API, backups, migrations, resources.
-- Automated infrastructure with Ansible (playbooks, roles, vault) + GitLab CI/CD, making deployments reproducible.
-- Implemented Infrastructure as Code practices: Git repositories + Ansible for configuration management.
-- Develop and maintain GitLab CI/CD pipelines for deployment automation.
-- Built and maintain production Active Directory from scratch: Root DC on Windows Server 2022, DNS, GPO, replication.
-- Implemented 3-2-1 backup strategy on PBS cluster for critical systems.
-- Run monitoring for 500+ hosts in Zabbix + Grafana dashboards; integrated Proxmox API for real-time metrics across 100+ servers.
-- Administer corporate systems: Bitrix Portal, mail infrastructure.
-- Designed and deployed an internal HR system: full-cycle from code to production and support (PHP/Laravel/JS + PostgreSQL).
-- Projects: full AD deployment from scratch, legacy systems migration to Proxmox virtualization, GitLab + Ansible IaC workflow integration.
-
-### TezTour [NDA] — Senior System Administrator (Information Security Dept.)
-*January 2020 – February 2023 · Office / remote · Critical infrastructure*
-
-**Stack:** Linux, MikroTik, VPN (Wireguard, OpenVPN, IPSec), Python, PostgreSQL, Docker, Zabbix, Matrix, Wireshark, Asterisk, TensorFlow, OpenCV, Telegram Bot API
-
-- Ensured 24/7 availability and security of critical infrastructure for a large international tour operator.
-- Administered network infrastructure: MikroTik routing, VPN, firewall, DNS.
-- Ensured information security of critical systems.
-- Developed internal automation tools for the InfoSec department using Python + PostgreSQL.
-- Monitored network traffic and identified security incidents.
-- Configured Zabbix monitoring on MikroTik to control network health and analyze traffic.
-- Ensured 99.9% uptime of critical infrastructure.
-
-**Key projects:**
-
-- **Network node monitoring and traffic analysis system (2022)**  
-  Port mirroring → tcpdump + Python parser → node activity metrics collection → Zabbix over Wireguard tunnel. Result: real-time anomaly detection.
-
-- **Secure messenger (2021)**  
-  Deployed a secure instance with E2E encryption + TURN server for VoIP/video over own servers. Result: fully secure solution with high availability and fault tolerance.
-
-- **Android app for security service (2021)**  
-  Full-cycle development in Java/Kotlin: design, development, release, API integration, database work, secure storage. Result: prevented critical company losses through rapid data collection.
-
-- **Document recognition system with OpenCV and TensorFlow (2020)**  
-  Standalone OCR solution for passports and text documents using TesseractOCR. Result: automated processing of 1,500+ documents/day.
-
-- **Telegram bots for HR automation (2020)**  
-  Python + PostgreSQL + Docker, integration with external APIs. Result: handled 10,000+ applications/month, reducing HR workload.
-
-### TezTour Thailand — System Administrator
-*May 2018 – December 2019 · Office*
-
-**Stack:** Linux (CentOS, Ubuntu), Windows Server, PostgreSQL, MariaDB, Bash, Python, Zabbix, Docker
-
-- Administered Linux/Windows servers, databases, and user infrastructure.
-- Developed Bash/Python scripts to automate routine tasks.
-- Supported users and resolved technical incidents.
-- Maintained owner infrastructure.
-- Supported Zabbix monitoring and Docker containers.
-
-## Open-source Work
-
-I build and harden infrastructure for AI and fintech products:
-
-- **ethereum/go-ethereum** — protocol-level security fixes: mutex leaks, blobpool data loss, filtermaps error handling.
-- **gonka-ai/gonka** — consensus safety, inference validation, semantic cache, error propagation in a decentralized AI compute protocol.
-- **gonkalabs/opengnk** — L1 semantic cache and inference quality metrics.
-- **Mayveskii/Mimic** — MCP server with C-core execution engine, orchestrator and multi-tool agent framework.
-- **RAG document workflow for fintech/back-office** — PostgreSQL/pgvector, GonkaGate API, structured document retrieval.
-- **Active Directory / GPO** — Domain infrastructure automation, DNS, replication, Group Policy for enterprise and financial environments.
-
-[See full contribution list →]({{ site.baseurl }}/contributions/)
-## Organizations
-
-- [mv-core](https://github.com/mv-core)
-- [mv-ml](https://github.com/mv-ml)
-## Education
-
-- Vocational education — Economics and accounting
-- Additional education — Public and municipal administration
-
-## Languages
-
-- Russian — native
-- English — B2 (fluent technical reading)
-
----
-
-Get in touch: [Telegram](https://t.me/fullom3m3) · [GitHub](https://github.com/Mayveskii)
+<section id="contact" class="section">
+  <div class="wrapper">
+    <h2 class="section-title">Get in touch</h2>
+    <div class="panel contact-panel">
+      <div class="contact-links">
+        <a href="https://t.me/fullom3m3" target="_blank" rel="noopener">Telegram: @fullom3m3</a>
+        <a href="https://github.com/Mayveskii" target="_blank" rel="noopener">GitHub: Mayveskii</a>
+        <a href="https://mayveskii.github.io/maevskii.blog/">Blog: mayveskii.github.io</a>
+      </div>
+    </div>
+  </div>
+</section>
