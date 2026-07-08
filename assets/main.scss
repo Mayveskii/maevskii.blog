@@ -14,6 +14,10 @@ $text: #e2e8f0;
 $text-muted: #94a3b8;
 $border: rgba(0, 240, 255, 0.25);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $bg-dark;
   color: $text;
@@ -73,6 +77,9 @@ hr {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: rgba(10, 10, 18, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid $border;
@@ -100,15 +107,46 @@ hr {
   }
 }
 
+.landing {
+  .wrapper {
+    max-width: 1000px;
+  }
+}
+
+.section {
+  padding: 5rem 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: none;
+}
+
+.panel {
+  background: $bg-panel;
+  backdrop-filter: blur(10px);
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 1rem;
-  margin: -2rem -1rem 3rem;
+  padding: 6rem 1rem 4rem;
+  margin: -2rem -1rem 0;
   background:
     linear-gradient(135deg, rgba(10, 10, 18, 0.92) 0%, rgba(20, 15, 40, 0.85) 50%, rgba(10, 10, 18, 0.95) 100%),
     url('{{ "/assets/images/hero.jpg" | relative_url }}') center/125% auto no-repeat;
@@ -119,6 +157,16 @@ hr {
 .hero-content {
   max-width: 900px;
   z-index: 1;
+}
+
+.hero-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid $cyan;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
@@ -166,14 +214,122 @@ hr {
   }
 }
 
-.panel {
+.about-more,
+.experience-more {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
   background: $bg-panel;
   backdrop-filter: blur(10px);
   border: 1px solid $border;
   border-radius: 12px;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 1.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 240, 255, 0.15);
+    border-color: rgba(0, 240, 255, 0.5);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    font-size: 1.15rem;
+    color: $cyan;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $text-muted;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.55rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(180deg, $cyan, $magenta);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $cyan;
+  border: 3px solid $bg-dark;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
+
+.timeline-content {
+  margin: 0;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+  }
+}
+
+.timeline-meta {
+  color: $text-muted;
+  font-size: 0.9rem;
+  margin-bottom: 0.8em;
+}
+
+.contact-panel {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  a {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid $border;
+    border-radius: 6px;
+    background: rgba(0, 240, 255, 0.05);
+
+    &:hover {
+      background: rgba(0, 240, 255, 0.12);
+      border-color: $cyan;
+    }
+  }
 }
 
 ul {
@@ -202,11 +358,11 @@ strong {
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .page-content {
-  padding-top: 2rem;
+  padding-top: 0;
 }
 
 .post-list > li {
@@ -234,11 +390,33 @@ pre, code {
     font-size: 1.1rem;
   }
 
+  .hero-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
   h1 {
     font-size: 2rem;
   }
 
+  .section {
+    padding: 3rem 0;
+  }
+
   .panel {
     padding: 1.2rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -1.5rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }
