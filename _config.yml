@@ -16,4 +16,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 show_excerpts: true
-favicon_version: 2
