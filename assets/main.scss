@@ -256,6 +256,17 @@ hr {
   }
 }
 
+.skill-card.flagship {
+  grid-column: 1 / -1;
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 40px rgba(139, 92, 246, 0.2);
+
+  &:hover {
+    border-color: $violet;
+    box-shadow: 0 12px 48px rgba(139, 92, 246, 0.35);
+  }
+}
+
 .timeline {
   position: relative;
   padding-left: 2rem;
