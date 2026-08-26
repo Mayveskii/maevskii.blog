@@ -87,7 +87,13 @@ Decentralized AI network (Go / Cosmos SDK). ~25 PRs plus security-class issues.
 
 ---
 
+## kubernetes-sigs / kueue (CNCF, SIG-Scheduling)
+
+- [Issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572) + [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (open) — trust-boundary bug class in the job framework: nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences. Unit + integration tests (envtest), CI 51/51.
+
+---
+
 ## Own research projects
 
-- [embryo](https://github.com/Mayveskii/embryo) — flagship AI-infrastructure research: binary-mesh, Go + C core, MCP server with 57 tools, hybrid RAG. The vulnerability-hunting pipeline behind the gonka and go-ethereum findings above.
-- [Mimic](https://github.com/Mayveskii/Mimic) — MCP server with a C-core execution engine, orchestrator, 48+ tools.
+- [embryo](https://github.com/Mayveskii/embryo) — flagship AI-infrastructure research: successful solutions are distilled into proven executable patterns and reused deterministically, with no repeated inference. The hunting pipeline behind the gonka, go-ethereum and kueue findings above.
+- [Mimic](https://github.com/Mayveskii/Mimic) — deterministic execution layer for AI agents: every operation is validated before it runs, cost is measured, failures roll back.

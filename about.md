@@ -4,13 +4,13 @@ title: Artemii Maevskii
 permalink: /about/
 ---
 
-I am an infrastructure engineer (DevOps / SRE / AI Infrastructure) with **8 years of production experience**. I went from system administrator to core administrator single-handedly carrying a company's entire IT — development, deployment, operations, security. A separate track is AI infrastructure research (**embryo → Mimic**) and protocol-level open source.
+I am an infrastructure engineer (DevOps / SRE / AI Infrastructure) with **6 years of production experience**. I went from system administrator to core administrator single-handedly carrying a company's entire IT — development, deployment, operations, security. A separate track is AI infrastructure research (**embryo → Mimic**) and protocol-level open source.
 
 Location: Moscow, Russia · Remote worldwide.
 
 ## Career path
 
-### danila-master.ru — Core Administrator (April 2023 – July 2026, remote)
+### danila-master.ru — Core Administrator (April 2024 – July 2026, remote)
 
 The company's entire IT infrastructure in one pair of hands, assembled and deployed personally: domain, virtualization, networks, monitoring, CI/CD, corporate services, mail, internal product development, documentation and handover of processes to support.
 
@@ -36,11 +36,11 @@ Client infrastructure project work (NDA):
 - **MariaDB/PBS (electronic metering provider).** Fixed degradation of a ~226 GB production database during 2-hour vzdump backups: I/O and network diagnostics, designed a binlog replica on a separate LXC, moved backups to the replica, qemu-guest-agent with fsfreeze hook, data access by mounting PBS archives without full restore.
 - **Redis for an HR bot of a medical branch (large organization).** Cascading failure of a shared instance (OOM + allkeys-lru: lost sessions, queues, reconnect storm) → refactoring: separated cache/sessions/queues/locks into dedicated instances, per-purpose eviction policies, AOF for queues, Sentinel, connection pooling, metrics in Zabbix. Incidents stopped.
 
-### 2018 – 2023 · System Administrator → Senior System Administrator, InfoSec (NDA)
+### 2019 – 2023 · System Administrator → Senior System Administrator, InfoSec (NDA)
 
-Five continuous years: from server administration at an international company (Thailand) to a senior role in the information security department of a large international tour operator. Employer names under NDA.
+Four continuous years: from server administration at an international company (Thailand) to a senior role in the information security department of a large international tour operator. Employer names under NDA.
 
-- 99.9% uptime of critical infrastructure with 24/7 requirements.
+- 95% uptime of critical infrastructure with 24/7 requirements.
 - Networks: MikroTik (routing, firewall), VPN (Wireguard, OpenVPN, IPSec), DNS.
 - Network node monitoring and traffic analysis: port mirroring → tcpdump + Python parser → metrics in Zabbix over a Wireguard tunnel; real-time anomaly detection.
 - Secure corporate messenger with E2E encryption (Matrix Synapse) and its own TURN server — high availability, fault tolerance.
@@ -51,16 +51,17 @@ Five continuous years: from server administration at an international company (T
 
 ## AI infrastructure research
 
-- **[embryo](https://github.com/Mayveskii/embryo) (binary-mesh) — flagship research.** "Deterministic intelligence": autonomous code analysis, vulnerability hunting and fix generation without an LLM call on mesh coverage. Go monolith + C core (CGO, mmap, binary runtime with 28 opcodes), MCP server with 57 tools, semantic mesh on int8-quantized embeddings (298K slots, <1 ms answers at sim ≥ 0.85), 5-signal hybrid RAG (Qdrant, 180K points), vulnerability hunting in real protocols (gonka, go-ethereum), commit survival analysis via git blame, honest recording of negative results.
-- **[Mimic](https://github.com/Mayveskii/Mimic) — the line continues.** MCP server with a C-core execution engine, orchestrator, 48+ tools.
+- **[embryo](https://github.com/Mayveskii/embryo) (binary-mesh) — flagship research.** Autonomous code analysis and fix generation: successful solutions are distilled into proven executable patterns and reused deterministically, with no repeated inference — knowledge compounds instead of burning in the session context. Proven in practice: the system found and patched defects in real protocols (go-ethereum, gonka, kueue); these findings became the PRs listed below.
+- **[Mimic](https://github.com/Mayveskii/Mimic) — the line continues.** Deterministic execution layer for AI agents: every operation is validated before it runs, cost is measured, failures roll back — the agent stops guessing arguments and burning tokens on retries.
 - **[teeth_master](https://github.com/Mayveskii/teeth_master)** — evidence-based knowledge base (dentistry, manual therapy) in an agent-ready format: domain skills, research SOPs, source discipline.
 
 ## Open source (protocol level)
 
 64 PRs in the first year of the public account (account created 2025; previous work under NDA), 10 issues including security class. Full list: [Contributions]({{ '/contributions/' | relative_url }}).
 
+- **kubernetes-sigs/kueue** (CNCF, SIG-Scheduling) — trust-boundary bug class in the job framework (nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences): [issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572), [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (open), unit + integration tests (envtest), CI 51/51.
 - **ethereum/go-ethereum** — PR [#34039](https://github.com/ethereum/go-ethereum/pull/34039) (merged): txLookupLock mutex leak in reorg(); error-handling series across core/txpool/filtermaps/snapshot (#34095–#34099, #34665, #34737); issues #34038, #34944.
-- **gonka-ai/gonka** (decentralized AI, Go/Cosmos SDK) — ~25 PRs: #1071 (merged) error propagation across inference/validation/pricing; BLS/DKG consensus security fixes (#851, #852; issues #848, #849); semantic cache (#859, #878); overflow guards, rate limits, graceful shutdown.
+- **gonka-ai/gonka** (decentralized AI, Go/Cosmos SDK) — ~25 PRs: #1071 error propagation across inference/validation/pricing; BLS/DKG consensus security fixes (#851, #852; issues #848, #849); semantic cache (#859, #878); overflow guards, rate limits, graceful shutdown.
 - **gonkalabs/opengnk** — PRs #1, #2 (merged): inference quality metrics middleware, L1 semantic cache.
 
 ## Full technology stack
