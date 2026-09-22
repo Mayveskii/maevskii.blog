@@ -4,15 +4,15 @@ title: Artemii Maevskii
 permalink: /about/
 ---
 
-I am an infrastructure engineer (DevOps / SRE / AI Infrastructure) with **6 years of production experience**. I went from system administrator to core administrator single-handedly carrying a company's entire IT — development, deployment, operations, security. A separate track is AI infrastructure research (**embryo → Mimic**) and protocol-level open source.
+I am an infrastructure engineer (DevOps / SRE / AI Infrastructure) with **6 years of production experience**. I went from system administrator to DevOps engineer running a company's entire IT as code — development, deployment, operations, security. A separate track is AI infrastructure research (**embryo → Mimic**) and protocol-level open source.
 
 Location: Moscow, Russia · Remote worldwide.
 
 ## Career path
 
-### danila-master.ru — Core Administrator (April 2024 – July 2026, remote)
+### danila-master.ru — DevOps Engineer (lead system administrator) (April 2024 – July 2026, remote)
 
-The company's entire IT infrastructure in one pair of hands, assembled and deployed personally: domain, virtualization, networks, monitoring, CI/CD, corporate services, mail, internal product development, documentation and handover of processes to support.
+The company's entire IT infrastructure in one pair of hands, assembled and deployed personally: domain, virtualization, networks, monitoring, CI/CD, corporate services, mail, internal product development, documentation and handover of processes to support. Everything is managed as code — every hypervisor, every VM, every service lives in git and changes only through it.
 
 Key implementations:
 
@@ -27,8 +27,10 @@ Key implementations:
   - [proxdash](https://github.com/Mayveskii/proxdash) — Proxmox infrastructure dashboard (Flask).
   - [rfo_poligon](https://github.com/Mayveskii/rfo_poligon) — CCTV panel on top of Flussonic.
   - [nextcloud](https://github.com/Mayveskii/nextcloud) — production file cloud in Docker (MariaDB + Redis), with a documented upgrade-incident post-mortem.
+  - [docpool](https://github.com/Mayveskii/docpool) — document management with a RAG chat in Go: PostgreSQL + pgvector, SSE streaming answers, answer verification against sources, protected PDF copies (AES-256-GCM), multi-user.
+  - [ai-reviewer](https://github.com/Mayveskii/ai-reviewer) — Go CLI that reviews pull requests with an orchestration of AI personas instead of one prompt.
 - **GitOps hypervisor management ([Nemesis](https://github.com/Mayveskii/Nemesis)).** Production Proxmox VE under a plan → approve → apply → verify regime: snapshots before changes, preflight, runbooks, no direct mutations, guardrails for the AI agent.
-- **Ansible fleet automation ([ansible-danila](https://github.com/Mayveskii/ansible-danila)).** ~20 hosts: HTML monitoring reports, Zabbix agent diagnostics, fail2ban hardening, read-only incident collection, webhook triggers from a bot.
+- **Ansible fleet automation ([ansible-danila](https://github.com/Mayveskii/ansible-danila)).** 15+ hypervisors and hundreds of VMs: HTML monitoring reports, Zabbix agent diagnostics and mass config updates (read-only/safe playbooks), fail2ban hardening, SSH key distribution, hypervisor audits, read-only incident collection, webhook triggers from a bot.
 - **Mail infrastructure.** mailcow in production, Bitrix24 portal, Asterisk.
 
 Client infrastructure project work (NDA):
@@ -59,9 +61,9 @@ Four continuous years: from server administration at an international company (T
 
 64 PRs in the first year of the public account (account created 2025; previous work under NDA), 10 issues including security class. Full list: [Contributions]({{ '/contributions/' | relative_url }}).
 
-- **kubernetes-sigs/kueue** (CNCF, SIG-Scheduling) — trust-boundary bug class in the job framework (nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences): [issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572), [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (open), unit + integration tests (envtest), CI 51/51.
+- **kubernetes-sigs/kueue** (CNCF, SIG-Scheduling) — trust-boundary bug class in the job framework (nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences): [issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572), [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (merged, cherry-picked into release branches), unit + integration tests (envtest), CI 51/51.
 - **ethereum/go-ethereum** — PR [#34039](https://github.com/ethereum/go-ethereum/pull/34039) (merged): txLookupLock mutex leak in reorg(); error-handling series across core/txpool/filtermaps/snapshot (#34095–#34099, #34665, #34737); issues #34038, #34944.
-- **gonka-ai/gonka** (decentralized AI, Go/Cosmos SDK) — ~25 PRs: #1071 error propagation across inference/validation/pricing; BLS/DKG consensus security fixes (#851, #852; issues #848, #849); semantic cache (#859, #878); overflow guards, rate limits, graceful shutdown.
+- **gonka-ai/gonka** (decentralized AI, Go/Cosmos SDK) — 30 PRs: #1071 (merged) error propagation across inference/validation/pricing; BLS/DKG consensus security fixes (#851, #852; issues #848, #849); semantic cache (#859, #878); overflow guards, rate limits, graceful shutdown.
 - **gonkalabs/opengnk** — PRs #1, #2 (merged): inference quality metrics middleware, L1 semantic cache.
 
 ## Full technology stack
@@ -74,7 +76,7 @@ Four continuous years: from server administration at an international company (T
 
 **Networking & Security:** MikroTik, Wireguard, OpenVPN, IPSec, DNS, NAT, firewall, OWASP, Wireshark/tcpdump, fail2ban.
 
-**Containers:** Docker, Docker Compose, Registry; Kubernetes — ready for production.
+**Containers:** Docker, Docker Compose, Registry; Kubernetes — code level (controllers, ownerReferences, reconcile logic, envtest).
 
 **Databases:** PostgreSQL (replication, backup), MariaDB, MySQL, Redis (HA, Sentinel), SQLite, Qdrant, pgvector, SQLAlchemy, Alembic.
 

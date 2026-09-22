@@ -9,8 +9,8 @@ title: Home
     <h1>Artemii Maevskii</h1>
     <div class="hero-subtitle">DevOps / SRE / AI Infrastructure Engineer</div>
     <div class="hero-tagline">
-      6 years of production experience — from system administrator to core administrator single-handedly running an entire company's IT infrastructure.
-      Research line in AI infrastructure (embryo → Mimic) and protocol-level open source: merged PR in ethereum/go-ethereum, consensus security fixes in gonka-ai/gonka.
+      6 years of production experience — from system administrator to DevOps engineer running an entire company's IT infrastructure as code.
+      Research line in AI infrastructure (embryo → Mimic) and protocol-level open source: merged security fix in kubernetes-sigs/kueue (CNCF), merged PR in ethereum/go-ethereum, consensus security fixes in gonka-ai/gonka.
     </div>
     <div class="hero-links">
       <a href="#about">About me</a>
@@ -26,8 +26,8 @@ title: Home
   <div class="wrapper">
     <h2 class="section-title">About</h2>
     <div class="panel">
-      <p>Infrastructure engineer with <strong>6 years of production experience</strong>: from system administrator to core administrator carrying an entire company's IT alone — development, deployment, operations, security.</p>
-      <p>A separate track is AI infrastructure research (<strong>embryo → Mimic</strong>) and protocol-level open source: a merged PR in <strong>ethereum/go-ethereum</strong> and security fixes for the BLS/DKG consensus in <strong>gonka-ai/gonka</strong>.</p>
+      <p>Infrastructure engineer with <strong>6 years of production experience</strong>: from system administrator to DevOps engineer carrying an entire company's IT as code — development, deployment, operations, security.</p>
+      <p>A separate track is AI infrastructure research (<strong>embryo → Mimic</strong>) and protocol-level open source: a merged multi-tenancy security fix in <strong>kubernetes-sigs/kueue</strong> (CNCF), a merged PR in <strong>ethereum/go-ethereum</strong> and security fixes for the BLS/DKG consensus in <strong>gonka-ai/gonka</strong>.</p>
       <p class="about-more"><a href="{{ '/about/' | relative_url }}">Read full bio →</a></p>
     </div>
   </div>
@@ -95,7 +95,11 @@ title: Home
       </div>
       <div class="skill-card">
         <h3><a href="https://github.com/Mayveskii/docpool" target="_blank" rel="noopener">docpool</a></h3>
-        <p>RAG document management, Go.</p>
+        <p>Document management with a RAG chat in Go: PostgreSQL + pgvector, SSE streaming answers, answer verification against sources, protected PDF copies (AES-256-GCM), multi-user.</p>
+      </div>
+      <div class="skill-card">
+        <h3><a href="https://github.com/Mayveskii/ai-reviewer" target="_blank" rel="noopener">ai-reviewer</a></h3>
+        <p>Go CLI that reviews pull requests with an orchestration of AI personas instead of one prompt: repo-aware context, structured findings.</p>
       </div>
       <div class="skill-card">
         <h3><a href="https://github.com/Mayveskii/race-invariant" target="_blank" rel="noopener">race-invariant</a> · <a href="https://github.com/Mayveskii/boundsafe" target="_blank" rel="noopener">boundsafe</a></h3>
@@ -124,7 +128,7 @@ title: Home
       </div>
       <div class="skill-card">
         <h3>Containers</h3>
-        <p>Docker, Docker Compose, Docker Registry; Kubernetes — ready for production</p>
+        <p>Docker, Docker Compose, Docker Registry; Kubernetes — code level (controllers, ownerReferences, reconcile logic, envtest)</p>
       </div>
       <div class="skill-card">
         <h3>Networking & Security</h3>
@@ -161,9 +165,9 @@ title: Home
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content panel">
-          <h3>danila-master.ru — Core Administrator</h3>
+          <h3>danila-master.ru — DevOps Engineer (lead system administrator)</h3>
           <div class="timeline-meta">April 2024 – July 2026 · Remote</div>
-          <p>The company's entire IT infrastructure in one pair of hands, built and deployed personally: Active Directory domain on Windows Server 2022 with Keycloak SSO, MeshCentral fleet management, software distribution via GPO, GitLab CI/CD deployment pipeline with staged rollouts and rollback, corporate products developed and operated solo (HR analytics, Bitrix24 bots, DMS with AI assistant, dashboards), GitOps-managed fleet of 15+ Proxmox hypervisors (500+ hosts/VMs), Ansible automation, mailcow / Bitrix24 / Asterisk.</p>
+          <p>The company's entire IT infrastructure in one pair of hands, built and deployed personally, managed fully as code: Active Directory domain on Windows Server 2022 with Keycloak SSO, MeshCentral fleet management, software distribution via GPO, GitLab CI/CD deployment pipeline with staged rollouts and rollback, corporate products developed and operated solo (HR analytics, Bitrix24 bots, DMS with AI assistant, dashboards), a fleet of 15+ Proxmox hypervisors (500+ hosts/VMs) under Ansible and GitOps, mailcow / Bitrix24 / Asterisk.</p>
         </div>
       </div>
       <div class="timeline-item">

@@ -4,7 +4,7 @@ title: Contributions
 permalink: /contributions/
 ---
 
-I focus on protocol reliability, consensus safety, error propagation and AI infrastructure. Below is the list of my public contributions to external projects — statuses verified via the GitHub API on 2026-07-25.
+I focus on protocol reliability, consensus safety, error propagation and AI infrastructure. Below is the list of my public contributions to external projects — statuses verified via the GitHub API on 2026-09-22.
 
 ---
 
@@ -30,7 +30,7 @@ I focus on protocol reliability, consensus safety, error propagation and AI infr
 
 ## gonka-ai / gonka
 
-Decentralized AI network (Go / Cosmos SDK). ~25 PRs plus security-class issues.
+Decentralized AI network (Go / Cosmos SDK). 30 PRs plus security-class issues.
 
 **Merged:**
 - [PR #1071](https://github.com/gonka-ai/gonka/pull/1071) — hardening: propagate internal errors across inference/validation/pricing paths
@@ -66,9 +66,9 @@ Decentralized AI network (Go / Cosmos SDK). ~25 PRs plus security-class issues.
 - [PR #1074](https://github.com/gonka-ai/gonka/pull/1074) (closed) — fix: propagate storage errors in SubmitPocValidationsV2
 - [PR #1075](https://github.com/gonka-ai/gonka/pull/1075) (closed) — fix: return errors from OverlapsWithPoC instead of swallowing them
 - [PR #1076](https://github.com/gonka-ai/gonka/pull/1076) (closed) — fix: propagate storage errors in UpdateDynamicPricing instead of defaulting
+- [PR #854](https://github.com/gonka-ai/gonka/pull/854) (closed) — fix(payloadstorage): advance minPruned only after successful prune
 
 **Open PRs:**
-- [PR #854](https://github.com/gonka-ai/gonka/pull/854) — fix(payloadstorage): advance minPruned only after successful prune
 - [PR #969](https://github.com/gonka-ai/gonka/pull/969) — fix(dapi): use signal.NotifyContext for graceful shutdown
 - [PR #1013](https://github.com/gonka-ai/gonka/pull/1013) — fix(subnet): prevent fund loss in unsettled escrow distribution
 - [PR #1017](https://github.com/gonka-ai/gonka/pull/1017) — fix(keeper): add overflow guards in bitcoin supply-cap distribution loop
@@ -89,7 +89,7 @@ Decentralized AI network (Go / Cosmos SDK). ~25 PRs plus security-class issues.
 
 ## kubernetes-sigs / kueue (CNCF, SIG-Scheduling)
 
-- [Issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572) + [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (open) — trust-boundary bug class in the job framework: nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences. Unit + integration tests (envtest), CI 51/51.
+- [Issue #13572](https://github.com/kubernetes-sigs/kueue/issues/13572) + [PR #13573](https://github.com/kubernetes-sigs/kueue/pull/13573) (merged, cherry-picked into release branches) — trust-boundary bug class in the job framework: nil pointer dereference, deletion/hijack of foreign Workloads via non-controller ownerReferences. Unit + integration tests (envtest), CI 51/51.
 
 ---
 
