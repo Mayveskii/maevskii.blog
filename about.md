@@ -35,7 +35,7 @@ Key implementations:
 
 Client infrastructure project work (NDA):
 
-- **MariaDB/PBS (electronic metering provider).** Fixed degradation of a ~226 GB production database during 2-hour vzdump backups: I/O and network diagnostics, designed a binlog replica on a separate LXC, moved backups to the replica, qemu-guest-agent with fsfreeze hook, data access by mounting PBS archives without full restore.
+- **MariaDB/PBS (electronic metering provider).** Fixed degradation of a production database during 2-hour vzdump backups: I/O and network diagnostics, designed a binlog replica on a separate LXC, moved backups to the replica, qemu-guest-agent with fsfreeze hook, data access by mounting PBS archives without full restore.
 - **Redis for an HR bot of a medical branch (large organization).** Cascading failure of a shared instance (OOM + allkeys-lru: lost sessions, queues, reconnect storm) → refactoring: separated cache/sessions/queues/locks into dedicated instances, per-purpose eviction policies, AOF for queues, Sentinel, connection pooling, metrics in Zabbix. Incidents stopped.
 
 ### 2019 – 2023 · System Administrator → Senior System Administrator, InfoSec (NDA)
