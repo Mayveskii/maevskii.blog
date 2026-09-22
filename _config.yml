@@ -11,7 +11,7 @@ github_username: Mayveskii
 telegram_username: fullom3m3
 theme: minima
 header_pages:
-  - organizations.md
+  - about.md
   - contributions.md
 plugins:
   - jekyll-feed
