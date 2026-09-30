@@ -30,9 +30,9 @@ title: Home
   <div class="wrapper">
     <h2 class="section-title">Featured work</h2>
     <div class="skill-grid">
-      <div class="skill-card flagship">
-        <h3><a href="https://github.com/Mayveskii/embryo" target="_blank" rel="noopener">embryo (binary-mesh)</a></h3>
-        <p>Autonomous code analysis and fix generation: solutions are distilled into proven patterns and reused without repeated inference. Its findings became merged PRs in kueue, go-ethereum and gonka.</p>
+      <div class="skill-card">
+        <h3><a href="https://github.com/Mayveskii/hradmin" target="_blank" rel="noopener">hradmin</a></h3>
+        <p>HR analytics admin panel on top of Bitrix24: Laravel 12 + Filament, ETL into PostgreSQL.</p>
       </div>
       <div class="skill-card">
         <h3><a href="https://github.com/Mayveskii/stacktrace" target="_blank" rel="noopener">stacktrace</a></h3>
@@ -47,7 +47,7 @@ title: Home
         <p>Document management with a RAG chat in Go: pgvector search, streaming answers verified against sources, protected PDF copies.</p>
       </div>
     </div>
-    <p class="experience-more"><a href="{{ '/about/' | relative_url }}">Full career &amp; all products →</a></p>
+    <p class="experience-more"><a href="{{ '/about/' | relative_url }}">Full career and all products</a></p>
   </div>
 </section>
 
@@ -55,10 +55,10 @@ title: Home
   <div class="wrapper">
     <h2 class="section-title">Open source</h2>
     <div class="panel">
-      <p><strong>kubernetes-sigs/kueue</strong> (CNCF, SIG-Scheduling) — found and fixed a multi-tenancy security hole: one cluster user could delete and hijack others' Workloads. <a href="https://github.com/kubernetes-sigs/kueue/pull/13573" target="_blank" rel="noopener">PR #13573</a> merged, cherry-picked into release branches.</p>
+      <p><strong>kubernetes-sigs/kueue</strong> (CNCF, SIG-Scheduling) — a trust-boundary bug class found by manual code inspection: one cluster user could delete and hijack others' Workloads. <a href="https://github.com/kubernetes-sigs/kueue/pull/13573" target="_blank" rel="noopener">PR #13573</a> merged, cherry-picked into release branches.</p>
       <p><strong>ethereum/go-ethereum</strong> — <a href="https://github.com/ethereum/go-ethereum/pull/34039" target="_blank" rel="noopener">PR #34039</a> merged: txLookupLock mutex leak in reorg().</p>
       <p><strong>gonka-ai/gonka</strong> (Go, Cosmos SDK) — a series of PRs on BLS/DKG consensus and error propagation; <a href="https://github.com/gonka-ai/gonka/pull/1071" target="_blank" rel="noopener">#1071</a> merged.</p>
-      <p class="about-more"><a href="{{ '/contributions/' | relative_url }}">All contributions →</a></p>
+      <p class="about-more"><a href="{{ '/contributions/' | relative_url }}">All contributions</a></p>
     </div>
   </div>
 </section>
@@ -72,13 +72,13 @@ title: Home
         <div class="timeline-content panel">
           <h3>Core DevOps — danila-master.ru, product company</h3>
           <div class="timeline-meta">2023 – 2026 · Remote</div>
-          <p>15+ Proxmox VE hypervisors, 500+ VMs, everything managed as code with Ansible. Monitoring of 500+ hosts (Zabbix, VictoriaMetrics, Grafana, Alertmanager, alerts to Telegram, logs via Vector), ETL contour (Airflow, ClickHouse, ELK), Kubernetes/OpenShift, GitLab CI/CD with dev/uat/prod and rollback by tag, proxy contour (NGINX, Nginx Proxy Manager, HAProxy, wildcard TLS), AD from scratch with Keycloak SSO, MeshCentral — plus a line of in-house products shipped solo, from a DMS with an AI assistant to datacenter automation.</p>
+          <p>15+ Proxmox VE hypervisors, 500+ VMs, everything managed as code with Ansible. Centralized monitoring of 500+ hosts: Zabbix, Grafana, Alertmanager, alerts to Telegram. Kubernetes with Helm, CI/CD on self-hosted GitLab with dev/uat/prod environments, tag-based releases and blue-green deployments, canary experience on HAProxy. Proxy contour for the whole domain infrastructure, Active Directory from scratch with Keycloak SSO, MeshCentral fleet management — plus a line of in-house products designed, written and shipped to production, from a DMS with an AI assistant to datacenter automation.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content panel">
-          <h3>System Administrator → Senior System Administrator, InfoSec (NDA)</h3>
+          <h3>System Administrator, then Senior System Administrator, InfoSec (NDA)</h3>
           <div class="timeline-meta">2019 – 2023 · 4 years</div>
           <p>From server administration at an international company (Thailand) to a senior InfoSec role at a major international tour operator: custom network monitoring, E2E-encrypted corporate messenger, OCR at 1,500+ docs/day.</p>
         </div>

@@ -13,8 +13,7 @@ bundle exec jekyll serve
 
 ## Structure
 
-- `index.md` — home page
-- `about.md` — about me
-- `organizations.md` — mv-core and mv-ml
-- `_posts/` — blog posts
+- `index.md` — home page (landing)
+- `about.md` — experience, products, stack, contacts
+- `contributions.md` — open source contributions
 - `_config.yml` — site configuration

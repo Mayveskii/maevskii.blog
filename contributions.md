@@ -4,7 +4,7 @@ title: Open Source
 permalink: /contributions/
 ---
 
-I work on protocol reliability, consensus safety and error propagation. Most findings come from [embryo](https://github.com/Mayveskii/embryo) — my own autonomous code-analysis system — and are prepared, tested and submitted by it under my review. Statuses verified via the GitHub API on 2026-09-22.
+I work on protocol reliability, consensus safety and error propagation. Bugs are found by manual code inspection; fixes are prepared, tested and submitted under my review. Statuses verified via the GitHub API on 2026-09-22.
 
 **At a glance:** merged in kubernetes-sigs/kueue (CNCF) · merged in ethereum/go-ethereum · merged in gonka-ai/gonka (consensus, Go/Cosmos SDK).
 
@@ -24,9 +24,3 @@ Decentralized AI network (Go / Cosmos SDK). A series of PRs on BLS/DKG consensus
 
 - [PR #1071](https://github.com/gonka-ai/gonka/pull/1071) (**merged**) — error propagation hardening.
 
----
-
-## Own research
-
-- [embryo](https://github.com/Mayveskii/embryo) — autonomous code analysis and fix generation: successful solutions are distilled into proven executable patterns and reused without repeated inference. The hunting pipeline behind the findings above.
-- [Mimic](https://github.com/Mayveskii/Mimic) — deterministic execution layer for AI agents: every operation is validated before it runs, cost is measured, failures roll back.
