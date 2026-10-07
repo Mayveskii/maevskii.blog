@@ -94,7 +94,6 @@ title: Home
       <div class="contact-links">
         <a href="https://t.me/fullom3m3" target="_blank" rel="noopener">Telegram: @fullom3m3</a>
         <a href="mailto:maevskiiartemii@gmail.com">maevskiiartemii@gmail.com</a>
-        <a href="tel:+79301209169">+7 (930) 120-91-69</a>
         <a href="https://github.com/Mayveskii" target="_blank" rel="noopener">GitHub: Mayveskii</a>
       </div>
     </div>

@@ -77,7 +77,6 @@ Merged fixes in CNCF and core infrastructure protocols, found by manual code ins
 
 - Telegram: [@fullom3m3](https://t.me/fullom3m3) (preferred)
 - Email: [maevskiiartemii@gmail.com](mailto:maevskiiartemii@gmail.com)
-- Phone: +7 (930) 120-91-69
 - GitHub: [Mayveskii](https://github.com/Mayveskii)
 - Blog: [mayveskii.github.io/maevskii.blog](https://mayveskii.github.io/maevskii.blog/)
 - Location: Moscow, Russia · Remote worldwide
