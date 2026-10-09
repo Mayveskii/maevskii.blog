@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Artemii Maevskii
+title: Artemii Mayveskii
 permalink: /about/
 ---
 

@@ -5,8 +5,8 @@ title: Home
 
 <section id="hero" class="hero">
   <div class="hero-content">
-    <img class="hero-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Artemii Maevskii">
-    <h1>Artemii Maevskii</h1>
+    <img class="hero-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Artemii Mayveskii">
+    <h1>Artemii Mayveskii</h1>
     <div class="hero-subtitle">DevOps / Senior SysAdmin</div>
     <div class="hero-tagline">
       6 years of production. I ran an entire company's IT as code — and I patch the protocols you run on.
