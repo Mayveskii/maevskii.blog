@@ -1,6 +1,6 @@
 # maevskii.blog
 
-Personal blog and landing page for Artemii Mayveskii.
+Personal blog and landing page for Maevskii Artemii.
 
 Built with [Jekyll](https://jekyllrb.com/) and the [Minima](https://github.com/jekyll/minima) theme, hosted on GitHub Pages.
 
